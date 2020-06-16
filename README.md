@@ -4,7 +4,7 @@
 
 
 ## 1.对接准备
- > * step1 向机蜜申请接口调用凭证信息(appid、secret、api_domain)；
+ > * step1 向机蜜申请接口调用凭证信息(appId、secret、api_domain)；
  > * step2 向机蜜申请获取调试环境；（注意：测试环境为http协议，而生产环境为https协议）
  > * step3 根据接口文档开发对接接口；
  > * step4 提供服务器IP给机蜜配置白名单；
@@ -48,18 +48,21 @@
 ```
  
 ### 2.3 签名算法
-为确保接口访问安全，接口的请求和响应应对所有参数使用对称加密算法做签名校验。请求和响应均在header中加入签名参数。
+为确保接口访问安全，接口的请求和响应应对所有参数(header+body)使用对称加密算法做签名校验。请求和响应均应在header中加入签名参数。
     
 Header参数：
 
 | 名称    | 含义   |  类型  | 是否必填 | 备注            |
 | :----   | :----  | :----  | :--      | :-------------  |
-| appid |    应用唯一标识    |  varchar(15)  | Y | - |
+| appId |    应用唯一标识    |  varchar(15)  | Y | - |
 | timestamp |    时间戳    |  varchar(15)  | Y | 时区GMT+8以秒为单位的时间戳 |
 | sign    |    签名    |  varchar(15)  | Y | - |
 
+Body参数：
+指http请求的消息体。
+
 签名算法：
- > * step1：把所有参数（包括appid、secret、timestamp）的key和值拼成字符串放入到数组，得到 array = ['key2=value2','key1=value1']
+ > * step1：把所有参数（包括appId、secret、timestamp、body）的key和值拼成字符串放入到数组，得到 array = ['key2=value2','key1=value1']
  > * step2：把数组按照ascii码进行升序排序，得到 array = ['key1=value1','key2=value2']
  > * step3：把数组的元素用&拼成一个字符串，得到 source = 'key1=value1&key2=value2'
  > * step4：根据step3得到的source生成MD5加密值，并转成大写，生成签名。sign=toUpperCase(Md5(source))
