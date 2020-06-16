@@ -146,7 +146,7 @@ Body参数：
 | recLng | 收货地址经度 | varchar(20) | N | - |
 | mac | 用户设备物理地址 | varchar(30) | N | md5(mac) |
 | wifimac | 用户WiFi设备的物理地址 | varchar(30) | N | md5(wifimac) |
-| extend | 扩展参数 | varchar(1000) | N | 扩展数据(三方独有数据)；json格式；作用：配合策略规则评分 |
+| extend | 扩展参数 | varchar(1000) | N | 扩展数据 |
 
 请求示例：
 ```javascript
