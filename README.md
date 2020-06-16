@@ -160,11 +160,15 @@ Body参数：
 ```javascript
 {
     "requestId":"10001",
-    "idcard":"AAAAAAAAAAAAAAA",
+    "idcardName":"AAAAAAAAAAAAAAA",
+    "idcardNum":"AAAAAAAAAAAAAAA",
     "phone":"AAAAAAAAAAAAAAA",
     "creLat":"39.916527",
     "creLng":"116.397128",
-    "ip":"localhost"
+    "recLat":"39.916527",
+    "recLng":"116.397128",
+    "mac":"AB:E2:D3",
+    "wifimac":"AB:E2:D3"
 }
 ```
 
