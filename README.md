@@ -99,7 +99,7 @@ Body参数：
     "data":{
         "secret":"AAAAAAAAAAAAAAAAAA"
         "upTime":"2020-01-01 11:11:11"
-        "expireTime":""
+        "expireTime":"2020-01-02 11:11:11"
     }
 }
 ```
