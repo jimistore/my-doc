@@ -191,8 +191,8 @@ Body参数：
             "value":"是"
         },
         {
-            "id":"my_greylist",
-            "name":"手机号是否命中黑名单",
+            "id":"my_risklist",
+            "name":"是否命中灰名单",
             "value":"是"
         },
         {
