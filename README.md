@@ -213,8 +213,8 @@ Body参数：
 | :---- | :---- |:---  | :-------------  |
 | my_blocklist   | 是否命中黑名单 | 是/否 |  - |
 | my_risklist| 是否命中灰名单 |  是/否  | - |
-| my_week_order_amount | 7天内下单总金额（分） | - |
-| my_month_order_amount | 30天内下单总金额（分） | - |
+| my_week_order_amount | 7天内下单总金额（分） | 整数 | - |
+| my_month_order_amount | 30天内下单总金额（分） | 整数 | - |
 
 
 ## 4.错误代码
