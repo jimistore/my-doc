@@ -191,17 +191,12 @@ Body参数：
             "value":"是"
         },
         {
-            "id":"my_risklist",
-            "name":"是否命中灰名单",
-            "value":"是"
-        },
-        {
-            "id":"my_week_order_amount",
+            "id":"my_order_amount_d7",
             "name":"7天内下单总金额",
             "value":"100000"
         },
         {
-            "id":"my_month_order_amount",
+            "id":"my_order_amount_d30",
             "name":"30天内下单总金额",
             "value":"200000"
         }
@@ -212,9 +207,14 @@ Body参数：
 | id    | 名称   |  值  | 备注            |
 | :---- | :---- |:---  | :-------------  |
 | my_blocklist   | 是否命中黑名单 | 是/否 |  - |
-| my_risklist| 是否命中灰名单 |  是/否  | - |
-| my_week_order_amount | 7天内下单总金额（分） | 整数 | - |
-| my_month_order_amount | 30天内下单总金额（分） | 整数 | - |
+| my_order_amount_d7 | 7天内下单总金额（分） | 整数 | - |
+| my_order_amount_d30 | 30天内下单总金额（分） | 整数 | - |
+| my_order_amount_d90 | 90天内下单总金额（分） | 整数 | - |
+| my_order_amount_d180 | 180天内下单总金额（分） | 整数 | - |
+| my_order_quantity_d7 | 7天内下单量 | 整数 | - |
+| my_order_quantity_d30 | 30天内下单量 | 整数 | - |
+| my_order_quantity_d90 | 90天内下单量 | 整数 | - |
+| my_order_quantity_d180 | 180天内下单量 | 整数 | - |
 
 
 ## 4.错误代码
