@@ -87,9 +87,9 @@ Body参数：
 | 名称    | 含义   |  类型  | 是否必填 | 备注            |
 | :----   | :----  | :----  | :--      | :-------------  |
 | requestId | 请求标识 | varchar(32) | Y | 用来标识请求唯一，生成方式对接方自定义，不重复即可 |
-| idcardNum | 用户身份证号 | varchar(20) | N | md5(身份证号码) |
+| idcardNum | 用户身份证号 | varchar(20) | N | md5(身份证号码)，身份证号和手机号不能同时为空 |
 | idcardName | 用户身份证姓名 | varchar(20) | N | md5(身份证姓名)，当身份证号不为空时，姓名也不能为空 |
-| phone | 用户手机号 | varchar(20) | N | md5(手机号) |
+| phone | 用户手机号 | varchar(20) | N | md5(手机号)，身份证号和手机号不能同时为空 |
 | creLat | 下单地址纬度 | varchar(20) | N | - |
 | creLng | 下单地址经度 | varchar(20) | N | - |
 | recLat | 收货地址纬度 | varchar(20) | N | - |
